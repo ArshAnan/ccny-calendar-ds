@@ -10,6 +10,9 @@ Python `date`, with a `dow` (day of week) column and a `text` (explanation) colu
 - `data/ccny_fall2021_table.html` — a cached copy of the calendar table, fetched directly from the
   live page. The notebook tries the live URL first; if the network is unavailable it falls back to
   this cached copy so the notebook can still run end-to-end.
+- `build_notebook.py` / `notebook_cells.py` — a small hand-rolled notebook builder used to author
+  and *actually execute* `ccny_calendar_scraper.ipynb` in an environment without Jupyter installed.
+  Not needed to use the notebook itself; kept for reproducibility.
 
 ## Setup
 
